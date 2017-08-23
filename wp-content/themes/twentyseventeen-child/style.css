@@ -137,6 +137,16 @@ margin:10px;
 
 /* end of form in popup */
 
+.product div[itemprop=description]{
+margin-top:10px;
+}
+
+/* Product */
+
+
+
+/* end of Product */
+
 a.button-a:hover{
 color:#fff;
 background: #767676;
@@ -144,6 +154,10 @@ box-shadow:none;
 }
 
 @media screen and (max-width: 768px){
+
+.product div[itemprop=description]{
+margin-top:15px;
+}
 
 .site-info a.button-a{
 text-align:center;

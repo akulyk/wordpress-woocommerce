@@ -1,0 +1,58 @@
+
+/* main block */
+@media screen and (min-width: 48em){
+
+.has-sidebar:not(.error404) #primary {
+    float: right;  
+}
+
+.has-sidebar:not(.error404) #secondary {
+    float: left;  
+}
+
+}
+
+.woocommerce #content div.product div.thumbnails a,
+.woocommerce div.product div.thumbnails a,
+.woocommerce-page #content div.product div.thumbnails a,
+.woocommerce-page div.product div.thumbnails a {
+    float: right; 
+    margin-left: 3.8%;
+	margin-right:initial;
+}
+
+/* end of main block */
+
+
+/* left bar */
+
+/* search widget */
+.widget_product_search input[type=submit] {
+    left: .5em; 
+}
+
+.widget_product_search .search-field {
+    padding-right: 5px;
+}
+
+/* end of search widget */
+
+.site-footer .widget .product_list_widget li a.remove,
+.widget .product_list_widget li a.remove {
+    float: left;
+}
+
+/* rating widget */
+.star-rating span {
+left:initial;
+right:2px;
+}
+
+.star-rating span::before { 
+left:initial;   
+    right: 0;
+}
+
+/* end of rating widget */
+
+/* end of left bar */
