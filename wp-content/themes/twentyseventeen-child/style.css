@@ -1,0 +1,164 @@
+/*
+ Theme Name:   Twenty Seventeen Child
+ Theme URI:    http://example.com/twenty-seventeen-child/
+ Description:  Twenty Seventeen Child Theme
+ Author:       Alexander Kulyk
+ Author URI:   http://akulyk.dp.ua
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-seventeen-child
+*/
+
+.site-contact{
+border:1px solid red;
+float:right;
+padding:25px;
+}
+
+.site-contact p{
+margin-bottom:0.5em;
+}
+.site-contact a{
+margin-bottom:0.5em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+a.button-a{
+background-color: #222;
+    border: 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1em 2em;
+    text-shadow: none;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+/* popup */
+.modal-open {
+    overflow: hidden;
+}
+
+.overlay,
+.modal-box{
+display:none;
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.modal-box{
+    position: fixed;
+	top:50%;
+	left:50%;
+    width: 100%;
+    height: 100%;
+	max-width:400px;
+    margin: 20px 0 0 20px;
+	overflow: auto;
+    background: #fff;
+    display: none;
+    z-index: 1001;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+.open{
+    display: block;
+}
+
+.modal-footer{
+padding:25px 5px;
+}
+
+a.js-modal-close{
+display:inline-block;
+float:right;
+}
+/* end of popup */
+
+/* form in popup */
+form.message-form label{
+margin-bottom:0.1em;
+}
+
+.form-control{
+margin:10px;
+}
+
+/* end of form in popup */
+
+a.button-a:hover{
+color:#fff;
+background: #767676;
+box-shadow:none;
+}
+
+@media screen and (max-width: 768px){
+
+.site-info a.button-a{
+text-align:center;
+width:100%;
+}
+
+.site-info button{
+width:100%;
+}
+
+}/* end of max-width 768px */
+
+@media screen and (max-width: 320px){
+.modal-box{
+max-width:300px;
+padding:5px;
+}
+}/* end of max-width 320px */
