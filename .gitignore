@@ -1,0 +1,11 @@
+.DS_Store
+readme.html
+testdomain.sql
+wp-config.php
+license.txt
+
+#images
+*.jpg
+*.png
+*.gif
+*.jpeg
