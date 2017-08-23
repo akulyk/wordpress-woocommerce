@@ -302,10 +302,15 @@ var wpLink;
 		getAttrs: function() {
 			wpLink.correctURL();
 
-			return {
-				href: $.trim( inputs.url.val() ),
-				target: inputs.openInNewTab.prop( 'checked' ) ? '_blank' : null
+			var attrs = {
+				href: $.trim( inputs.url.val() )
 			};
+
+			if ( inputs.openInNewTab.prop( 'checked' ) ) {
+				attrs.target = '_blank';
+			}
+
+			return attrs;
 		},
 
 		buildHtml: function(attrs) {
@@ -380,7 +385,6 @@ var wpLink;
 
 			wpLink.close();
 			textarea.focus();
-			$( textarea ).trigger( 'change' );
 
 			// Audible confirmation message when a link has been inserted in the Editor.
 			wp.a11y.speak( wpLinkL10n.linkInserted );
